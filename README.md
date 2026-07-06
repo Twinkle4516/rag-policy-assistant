@@ -36,3 +36,19 @@ Public CMS documents from data.cms.gov including Medicare Monthly Enrollment, Me
 - Add source citation showing which document each answer came from
 - Expand document corpus with full CMS policy library
 - Add conversation memory for multi-turn Q&A
+
+
+## Architecture
+
+```mermaid
+flowchart LR
+    A[CMS PDF Documents] --> B[Text Chunking\nLangChain splitter]
+    B --> C[Semantic Embeddings\nall-MiniLM-L6-v2]
+    C --> D[(ChromaDB\nVector Store)]
+    
+    E[User Question\nStreamlit UI] --> F[Query Embedding\nSame model]
+    D -->|similarity search| G[Top-k Retrieval]
+    F --> G
+    G --> H[Claude API\nAnswer generation]
+    H --> I[Response\nGrounded in policy docs]
+```
