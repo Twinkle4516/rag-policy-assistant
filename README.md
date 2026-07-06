@@ -32,6 +32,7 @@ src/query.py: retrieval and Claude answer generation
 src/app.py: Streamlit interface
 
 **Future Improvements**
+
 Add source citation showing which document each answer came from
 Expand document corpus with full CMS policy library
 Add conversation memory for multi-turn Q&A
