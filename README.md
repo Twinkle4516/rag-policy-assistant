@@ -52,3 +52,7 @@ flowchart LR
     G --> H[Claude API\nAnswer generation]
     H --> I[Response\nGrounded in policy docs]
 ```
+
+
+## Demo
+![App Screenshot](docs/App SS.webp)
