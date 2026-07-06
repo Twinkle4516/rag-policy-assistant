@@ -55,4 +55,4 @@ flowchart LR
 
 
 ## Demo
-![App Screenshot](docs/App SS.webp)
+![App Screenshot](docs/screenshot.png)
