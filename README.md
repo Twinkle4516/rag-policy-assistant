@@ -33,7 +33,6 @@ Public CMS documents from data.cms.gov including Medicare Monthly Enrollment, Me
 
 ## Future Improvements
 
-- Add source citation showing which document each answer came from
 - Expand document corpus with full CMS policy library
 - Add conversation memory for multi-turn Q&A
 
